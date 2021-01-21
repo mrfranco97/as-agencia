@@ -1,0 +1,291 @@
+
+$font-size-base:1rem;
+$font-family-base:'Karla', sans-serif;
+$font-family-title:'Mulish',sans-serif;
+$mint: #97fae4ff;
+$black: #000807ff;
+$gray: #858786ff;
+$snow: #fffbffff;
+$primary:$mint;
+$secondary:$snow;
+$colors: (
+    "mint":     $mint,
+    "snow":     $snow,
+    "black":    $black,
+    "gray":     $gray
+);
+$theme-colors: (
+    "primary":      $primary,
+    "secondary":    $snow 
+
+);
+
+@import "bootstrap/scss/bootstrap.scss";
+
+@mixin span-shadow-generator($font-color:$black,$b1-color:$primary,$b2-color:$black){
+    background-color: $b1-color;
+    display: inline-block;
+    font-weight: bold;
+    color:$font-color;
+    padding: 0.2rem;
+    transform: skewX(-10deg);
+    box-shadow: 5px 2px 0px $b2-color;
+    @if $font-color == $b1-color{
+        color: $primary;
+        background-color: $black;
+    }
+    @if $b1-color==$b2-color {
+        $b2-color: $font-color;
+    }
+    @if $b2-color==$white or $b2-color==$snow {
+        box-shadow: 5px 2px 0px $gray;
+    }   
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-family-base;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: $font-size-base;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    header{
+        background-color: $snow;
+    }
+    
+    h1,h2,h3,h4 {
+        font-family: $font-family-title;
+        font-weight: bold;
+        font-size: $font-size-base*3;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    .navbar-light
+    {
+        .navbar-nav
+        {
+        .nav-link
+        {
+            color:$black;
+            font-size: $font-size-base*1.1;
+
+            &:hover
+            {
+                color: $primary;
+            }
+        }
+        }  
+    } 
+
+    #video{
+        width: 100%;
+        position: relative;
+        z-index: 100;
+    }
+
+    
+    
+    .media{
+        font-size: $font-size-base*1.5;
+        color:$black;
+        font-style: none;
+        position:fixed;
+        background-color: rgba(0, 0, 0, 0.10);
+        top:40%;
+        left: auto;
+        right: 0;
+        border-radius: 1rem;
+        z-index: 20;
+        ul
+        {
+            li{
+                a
+                {
+                    color:$black;
+                    padding: 5px;
+                    display: block;
+                    &:hover
+                    {
+                        color:$primary;
+                    }
+                }
+            }            
+        } 
+    }
+    #hola{
+        font-size: $font-size-base*1.2;
+        font-weight: bold;
+    }
+    
+    .m-v-data{
+        margin: 1rem 0rem;
+        h3{
+            font-size: $font-size-base*1.5;
+            .span-highlight{
+                background-color: $primary;
+                display: inline-block;
+                font-weight: bold;
+                padding: 0.2rem;
+                transform: skewX(-25deg);
+            }
+        }
+    }
+    .span-highlight-shadow-bg-primary{
+        @include span-shadow-generator();
+    }
+    
+    .span-highlight-shadow-bg-black{
+        @include span-shadow-generator($primary, $black, $gray)
+
+    }
+    .span-highlight-shadow-bg-secondary{
+        @include span-shadow-generator($black,$secondary,$primary);
+    }
+    .span-highlight-shadow-prueba{
+        @include span-shadow-generator($primary, $black, $white)
+    }
+    
+    
+    
+    .data-profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0.5rem;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.2);
+            margin: 1rem 1rem 2.5rem 1rem;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            border-radius: 100%;
+            margin-bottom: 1rem;
+        }
+        h4{
+            background-color: $primary;
+            font-weight: bold;
+            font-size: $font-size-base;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-weight: 500;
+            font-size: $font-size-base*1.2;
+            padding:0rem 0.2rem;
+        }
+    }
+    
+    footer{
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        div{
+            p{
+                font-size:$font-size-base*1.2;
+            }
+        }
+    }
+    /*-------- Services Styles-----------*/
+    
+    .services-title{
+        margin-bottom: 2rem;
+        &-highlight{
+            display: inline;
+            position: relative;
+            left: -22px;
+            top: 22px;
+            color: $primary;
+        }
+    }
+    
+    .services-wraper{
+        h2{
+            font-size: $font-size-base*2;
+        }  
+    } 
+    
+    
+    #mkt-title{
+        font-size: 1.2rem;
+        color:$primary;
+        margin:auto;
+    }
+
+    /*--------Portfolio Styles-------*/
+
+    .slides{
+        width:  70%;
+        display: block;
+        margin:0 auto;
+        background-color: $gray;
+        .img-wraper{
+            display: flex;
+            justify-content: center;
+            margin:1rem;
+            img{
+                border-radius: 100%;
+            }
+        }
+        blockquote {
+            width: 100%;
+            position: relative;
+            margin: auto;
+            p{
+                font-size: $font-size-base*2;
+                font-weight: bold;
+                margin:1rem;
+            }
+            &::before{
+                position: absolute;
+                font-size: 14rem;
+                content: '“';
+                left: 0;
+                top: 0;
+                opacity: 0.1;
+            }
+            &::after {
+                position: absolute;
+                font-size: 14rem;
+                content: '”';
+                right: 0;
+                bottom: 0;
+                opacity: 0.1;
+            }
+            cite{
+                font-size: $font-size-base;
+                display: block;
+            }
+            .position{
+                opacity: 0.5;
+            }
+        }
+    }
+    .clients{
+        margin-top: auto;
+        margin-bottom: auto;
+        .img-wraper{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+    /* ------- Contact Styles -----------*/
+    #contacto{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .contact-wraper{
+        .img-wraper{
+            width: auto;
+        }
+        }
+}
