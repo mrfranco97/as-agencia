@@ -7300,50 +7300,58 @@ body {
     font-size: 1.2rem;
     color: #97fae4ff;
     margin: auto; }
-  body .slides {
+  body #carousel-indicadores {
     width: 70%;
-    display: block;
-    margin: 0 auto;
-    background-color: #858786ff; }
-    body .slides .img-wraper {
-      display: flex;
-      justify-content: center;
-      margin: 1rem; }
-      body .slides .img-wraper img {
-        border-radius: 100%; }
-    body .slides blockquote {
+    margin: auto; }
+    body #carousel-indicadores .carousel-indicators {
+      margin: 0; }
+  body .carousel-inner {
+    width: 100%;
+    padding-bottom: 3px;
+    background-color: gray; }
+    body .carousel-inner .slides {
       width: 100%;
-      position: relative;
-      margin: auto; }
-      body .slides blockquote p {
-        font-size: 2rem;
-        font-weight: bold;
-        margin: 1rem; }
-      body .slides blockquote::before {
-        position: absolute;
-        font-size: 14rem;
-        content: '“';
-        left: 0;
-        top: 0;
-        opacity: 0.1; }
-      body .slides blockquote::after {
-        position: absolute;
-        font-size: 14rem;
-        content: '”';
-        right: 0;
-        bottom: 0;
-        opacity: 0.1; }
-      body .slides blockquote cite {
-        font-size: 1rem;
-        display: block; }
-      body .slides blockquote .position {
-        opacity: 0.5; }
+      display: block;
+      margin: auto;
+      background-color: #858786ff; }
+      body .carousel-inner .slides .img-wraper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding: 1rem 0; }
+        body .carousel-inner .slides .img-wraper img {
+          border-radius: 100%; }
+      body .carousel-inner .slides .data-wraper {
+        margin-bottom: 2rem; }
+        body .carousel-inner .slides .data-wraper blockquote {
+          width: 100%;
+          position: relative;
+          margin: 0; }
+          body .carousel-inner .slides .data-wraper blockquote p {
+            font-size: 2rem;
+            font-weight: bold; }
+          body .carousel-inner .slides .data-wraper blockquote::before {
+            position: absolute;
+            font-size: 14rem;
+            content: '“';
+            left: 0;
+            top: 0;
+            opacity: 0.1; }
+          body .carousel-inner .slides .data-wraper blockquote::after {
+            position: absolute;
+            font-size: 14rem;
+            content: '”';
+            right: 0;
+            bottom: 0;
+            opacity: 0.1; }
+          body .carousel-inner .slides .data-wraper blockquote cite {
+            font-size: 1rem;
+            display: block; }
+          body .carousel-inner .slides .data-wraper blockquote .position {
+            opacity: 0.5; }
   body .clients {
-    margin-top: auto;
-    margin-bottom: auto; }
-    body .clients .img-wraper {
-      margin-top: auto;
-      margin-bottom: auto; }
+    margin-bottom: auto;
+    margin-top: auto; }
   body #contacto {
     margin-top: auto;
     margin-bottom: auto; }

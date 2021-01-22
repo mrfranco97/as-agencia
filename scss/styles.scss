@@ -222,61 +222,71 @@ body{
     }
 
     /*--------Portfolio Styles-------*/
-
-    .slides{
-        width:  70%;
-        display: block;
-        margin:0 auto;
-        background-color: $gray;
-        .img-wraper{
-            display: flex;
-            justify-content: center;
-            margin:1rem;
-            img{
-                border-radius: 100%;
-            }
+    #carousel-indicadores{
+        width: 70%;
+        margin: auto;
+        .carousel-indicators{
+            margin:0;
         }
-        blockquote {
-            width: 100%;
-            position: relative;
-            margin: auto;
-            p{
-                font-size: $font-size-base*2;
-                font-weight: bold;
-                margin:1rem;
-            }
-            &::before{
-                position: absolute;
-                font-size: 14rem;
-                content: '“';
-                left: 0;
-                top: 0;
-                opacity: 0.1;
-            }
-            &::after {
-                position: absolute;
-                font-size: 14rem;
-                content: '”';
-                right: 0;
-                bottom: 0;
-                opacity: 0.1;
-            }
-            cite{
-                font-size: $font-size-base;
+    }
+    .carousel-inner{
+        width: 100%;
+        padding-bottom: $carousel-indicator-height;
+        background-color: gray;
+            .slides{
+                width:  100%;
                 display: block;
-            }
-            .position{
-                opacity: 0.5;
-            }
+                margin:auto;
+                background-color: $gray;
+                .img-wraper{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+                    padding: 1rem 0;
+                        img{
+                            border-radius: 100%;
+                        }
+                }
+                .data-wraper{
+                    margin-bottom: 2rem;
+                    blockquote {
+                        width: 100%;
+                        position: relative;
+                        margin: 0;
+                        p{
+                            font-size: $font-size-base*2;
+                            font-weight: bold;
+                        }
+                        &::before{
+                            position: absolute;
+                            font-size: 14rem;
+                            content: '“';
+                            left: 0;
+                            top: 0;
+                            opacity: 0.1;
+                        }
+                        &::after {
+                            position: absolute;
+                            font-size: 14rem;
+                            content: '”';
+                            right: 0;
+                            bottom: 0;
+                            opacity: 0.1;
+                        }
+                        cite{
+                            font-size: $font-size-base;
+                            display: block;
+                        }
+                        .position{
+                            opacity: 0.5;
+                        }
+                    }
+                }
         }
     }
     .clients{
-        margin-top: auto;
         margin-bottom: auto;
-        .img-wraper{
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+        margin-top: auto;
     }
     /* ------- Contact Styles -----------*/
     #contacto{
