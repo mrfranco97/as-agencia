@@ -7173,9 +7173,10 @@ body {
   padding-bottom: 40px;
   /*-------- Services Styles-----------*/
   /*--------Portfolio Styles-------*/
-  /* ------- Contact Styles -----------*/ }
+  /* ------- Contact Styles -----------*/
+  /* ----------- As Blgos Styles ------------*/ }
   body header {
-    background-color: #fffbffff; }
+    background-color: #fff; }
   body h1, body h2, body h3, body h4 {
     font-family: "Mulish", sans-serif;
     font-weight: bold;
@@ -7221,6 +7222,12 @@ body {
         font-weight: bold;
         padding: 0.2rem;
         transform: skewX(-25deg); }
+  body .span-highlight {
+    background-color: #97fae4ff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.2rem;
+    transform: skewX(-25deg); }
   body .span-highlight-shadow-bg-primary {
     background-color: #97fae4ff;
     display: inline-block;
@@ -7308,7 +7315,7 @@ body {
   body .carousel-inner {
     width: 100%;
     padding-bottom: 3px;
-    background-color: gray; }
+    background-color: #858786ff; }
     body .carousel-inner .slides {
       width: 100%;
       display: block;
@@ -7349,11 +7356,25 @@ body {
             display: block; }
           body .carousel-inner .slides .data-wraper blockquote .position {
             opacity: 0.5; }
-  body .clients {
-    margin-bottom: auto;
-    margin-top: auto; }
+  body .clients .img-wraper {
+    height: 50px;
+    width: 80px; }
+    body .clients .img-wraper img {
+      height: 100%; }
   body #contacto {
-    margin-top: auto;
-    margin-bottom: auto; }
-  body .contact-wraper .img-wraper {
-    width: auto; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; }
+    body #contacto .contact-icons a {
+      font-size: 2rem;
+      color: #000807ff;
+      padding: 5px;
+      display: block; }
+      body #contacto .contact-icons a:hover {
+        color: #97fae4ff; }
+  body article .img-wraper {
+    height: 250px; }
+    body article .img-wraper a img {
+      height: 100%; }

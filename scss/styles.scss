@@ -55,7 +55,7 @@ body{
     min-height: 100vh;
     padding-bottom: 40px;
     header{
-        background-color: $snow;
+        background-color: $white;
     }
     
     h1,h2,h3,h4 {
@@ -135,6 +135,13 @@ body{
                 transform: skewX(-25deg);
             }
         }
+    }
+    .span-highlight{
+        background-color: $primary;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.2rem;
+        transform: skewX(-25deg);
     }
     .span-highlight-shadow-bg-primary{
         @include span-shadow-generator();
@@ -222,6 +229,7 @@ body{
     }
 
     /*--------Portfolio Styles-------*/
+
     #carousel-indicadores{
         width: 70%;
         margin: auto;
@@ -232,7 +240,7 @@ body{
     .carousel-inner{
         width: 100%;
         padding-bottom: $carousel-indicator-height;
-        background-color: gray;
+        background-color: $gray;
             .slides{
                 width:  100%;
                 display: block;
@@ -285,17 +293,45 @@ body{
         }
     }
     .clients{
-        margin-bottom: auto;
-        margin-top: auto;
+        .img-wraper{
+            height: 50px;
+            width: 80px;
+                img{
+                    height: 100%;
+                }
+        }
     }
     /* ------- Contact Styles -----------*/
+    
     #contacto{
-        margin-top: auto;
-        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .contact-icons{
+            a{
+                font-size: $font-size-base*2;
+            color:$black;
+            padding: 5px;
+            display: block;
+                &:hover
+                {
+                    color:$primary;
+                }
+            }
+        }
     }
-    .contact-wraper{
+    /* ----------- As Blgos Styles ------------*/
+
+    article{
         .img-wraper{
-            width: auto;
+            height: 250px;
+                a{
+                    img{
+                        height: 100%;
+                    }
+                }
         }
-        }
+    }
 }
