@@ -324,14 +324,14 @@ body{
     }
     /* ----------- As Blgos Styles ------------*/
 
-    article{
+    .card{
         .img-wraper{
-            height: 250px;
-                a{
-                    img{
-                        height: 100%;
-                    }
-                }
+            height: 300px;
+            width: 100%;
+            .card-img{
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
