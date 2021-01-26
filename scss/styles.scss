@@ -17,7 +17,6 @@ $colors: (
 $theme-colors: (
     "primary":      $primary,
     "secondary":    $snow 
-
 );
 
 @import "bootstrap/scss/bootstrap.scss";
@@ -323,15 +322,21 @@ body{
         }
     }
     /* ----------- As Blgos Styles ------------*/
-
-    .card{
-        .img-wraper{
-            height: 300px;
-            width: 100%;
+    
+    .article-highlighted{
+        .card{
             .card-img{
+                height: 200px;
                 width: 100%;
-                height: 100%;
+            }
+            .card-img-overlay{
+                top:unset;
+                    .card-title{
+                        font-size: $font-size-base*2;
+                        margin-bottom: 0;
+                    }
             }
         }
     }
+
 }

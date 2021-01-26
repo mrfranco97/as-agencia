@@ -7374,9 +7374,11 @@ body {
       display: block; }
       body #contacto .contact-icons a:hover {
         color: #97fae4ff; }
-  body .card .img-wraper {
-    height: 300px;
+  body .article-highlighted .card .card-img {
+    height: 200px;
     width: 100%; }
-    body .card .img-wraper .card-img {
-      width: 100%;
-      height: 100%; }
+  body .article-highlighted .card .card-img-overlay {
+    top: unset; }
+    body .article-highlighted .card .card-img-overlay .card-title {
+      font-size: 2rem;
+      margin-bottom: 0; }
