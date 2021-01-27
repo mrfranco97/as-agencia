@@ -326,6 +326,7 @@ body{
     .article-highlighted{
         .card{
             overflow: hidden;
+            background-color: $mint;
             a{
                 .card-img{
                     height: 200px;
@@ -335,43 +336,43 @@ body{
                     &:hover{
                         .card-img{
                             transform: scale(1.1);
-                            opacity: 0.3;
+                            opacity: 0.8;
                             transition: all 2s ease;
                         }
                     }
             }
-            a{
-                .card-img-overlay{
-                    top:unset;
-                        display: block;
-                        text-decoration: none;
-                        color: $white;
-                        .card-title{
-                            font-size: $font-size-base*2;
-                            margin-bottom: 0;
-                        }
-                        .card-text{
-                            font-size: $font-size-base*.8;
-                            span{
-                                color: $primary;
+                a{
+                    .card-img-overlay{
+                        top:unset;
+                            display: block;
+                            text-decoration: none;
+                            color: $white;
+                            .card-title{
+                                font-size: $font-size-base*2.5;
+                                margin-bottom: 0;
                             }
-                        }
-                        &:hover{
-                            .card-img{
-                                transform: scale(1.1);
-                                opacity: 0.3;
-                                transition: all 1s ease;
+                            .card-text{
+                                font-size: $font-size-base;
+                                span{
+                                    color: $primary;
+                                }
                             }
-                        }              
-                }
-                &:hover{
-                    .card-img{
-                        transform: scale(1.1);
-                        opacity: 0.3;
-                        transition: all 2s ease;
+                            &:hover{
+                                .card-img{
+                                    transform: scale(1.1);
+                                    opacity: 0.3;
+                                    transition: all 1s ease;
+                                }
+                            }              
+                            &:hover{
+                                .card-img{
+                                    transform: scale(1.1);
+                                    opacity: 0.3;
+                                    transition: all 2s ease;
+                                }
+                            }
                     }
                 }
-            }
         }
     }
 }

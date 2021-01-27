@@ -7375,14 +7375,15 @@ body {
       body #contacto .contact-icons a:hover {
         color: #97fae4ff; }
   body .article-highlighted .card {
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: #97fae4ff; }
     body .article-highlighted .card a .card-img {
       height: 200px;
       width: 100%;
       background-color: #97fae4ff; }
     body .article-highlighted .card a:hover .card-img {
       transform: scale(1.1);
-      opacity: 0.3;
+      opacity: 0.8;
       transition: all 2s ease; }
     body .article-highlighted .card a .card-img-overlay {
       top: unset;
@@ -7390,17 +7391,17 @@ body {
       text-decoration: none;
       color: #fff; }
       body .article-highlighted .card a .card-img-overlay .card-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 0; }
       body .article-highlighted .card a .card-img-overlay .card-text {
-        font-size: 0.8rem; }
+        font-size: 1rem; }
         body .article-highlighted .card a .card-img-overlay .card-text span {
           color: #97fae4ff; }
       body .article-highlighted .card a .card-img-overlay:hover .card-img {
         transform: scale(1.1);
         opacity: 0.3;
         transition: all 1s ease; }
-    body .article-highlighted .card a:hover .card-img {
-      transform: scale(1.1);
-      opacity: 0.3;
-      transition: all 2s ease; }
+      body .article-highlighted .card a .card-img-overlay:hover .card-img {
+        transform: scale(1.1);
+        opacity: 0.3;
+        transition: all 2s ease; }
