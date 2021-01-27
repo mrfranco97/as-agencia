@@ -7378,7 +7378,16 @@ body {
     height: 200px;
     width: 100%; }
   body .article-highlighted .card .card-img-overlay {
-    top: unset; }
-    body .article-highlighted .card .card-img-overlay .card-title {
-      font-size: 2rem;
-      margin-bottom: 0; }
+    top: unset;
+    display: block; }
+    body .article-highlighted .card .card-img-overlay a {
+      transform: scale(2);
+      text-decoration: none;
+      color: #fffbffff; }
+      body .article-highlighted .card .card-img-overlay a .card-title {
+        font-size: 3rem;
+        margin-bottom: 0; }
+  body .article-highlighted .card:hover {
+    transition: all 5s ease; }
+    body .article-highlighted .card:hover-img {
+      opacity: rga(); }
