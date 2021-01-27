@@ -7374,20 +7374,33 @@ body {
       display: block; }
       body #contacto .contact-icons a:hover {
         color: #97fae4ff; }
-  body .article-highlighted .card .card-img {
-    height: 200px;
-    width: 100%; }
-  body .article-highlighted .card .card-img-overlay {
-    top: unset;
-    display: block; }
-    body .article-highlighted .card .card-img-overlay a {
-      transform: scale(2);
+  body .article-highlighted .card {
+    overflow: hidden; }
+    body .article-highlighted .card a .card-img {
+      height: 200px;
+      width: 100%;
+      background-color: #97fae4ff; }
+    body .article-highlighted .card a:hover .card-img {
+      transform: scale(1.1);
+      opacity: 0.3;
+      transition: all 2s ease; }
+    body .article-highlighted .card a .card-img-overlay {
+      top: unset;
+      display: block;
       text-decoration: none;
-      color: #fffbffff; }
-      body .article-highlighted .card .card-img-overlay a .card-title {
-        font-size: 3rem;
+      color: #fff; }
+      body .article-highlighted .card a .card-img-overlay .card-title {
+        font-size: 2rem;
         margin-bottom: 0; }
-  body .article-highlighted .card:hover {
-    transition: all 5s ease; }
-    body .article-highlighted .card:hover-img {
-      opacity: rga(); }
+      body .article-highlighted .card a .card-img-overlay .card-text {
+        font-size: 0.8rem; }
+        body .article-highlighted .card a .card-img-overlay .card-text span {
+          color: #97fae4ff; }
+      body .article-highlighted .card a .card-img-overlay:hover .card-img {
+        transform: scale(1.1);
+        opacity: 0.3;
+        transition: all 1s ease; }
+    body .article-highlighted .card a:hover .card-img {
+      transform: scale(1.1);
+      opacity: 0.3;
+      transition: all 2s ease; }
