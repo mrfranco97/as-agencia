@@ -45,6 +45,47 @@ $theme-colors: (
     box-sizing: border-box;
 }
 
+/*----------Clases Genericas------------*/
+
+.span-highlight{
+    background-color: $primary;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.2rem;
+    transform: skewX(-25deg);
+}
+.span-highlight-shadow-bg-primary{
+    @include span-shadow-generator();
+}
+
+.span-highlight-shadow-bg-black{
+    @include span-shadow-generator($primary, $black, $gray)
+
+}
+.span-highlight-shadow-bg-secondary{
+    @include span-shadow-generator($black,$secondary,$primary);
+}
+.span-highlight-shadow-prueba{
+    @include span-shadow-generator($primary, $black, $white)
+}
+.img-effect:hover{
+    .card-img{
+        transform: scale(1.1);
+        opacity: 0.8;
+        transition: all 2s ease;
+    }
+}
+.img-effect:hover{
+    .col{
+        .card-img{
+            transform: scale(1.1);
+            opacity: 0.8;
+            transition: all 2s ease;
+        }
+    }
+}
+
+
 body{
     font-family: $font-family-base;
     font-weight: 400;
@@ -135,30 +176,6 @@ body{
             }
         }
     }
-    .span-highlight{
-        background-color: $primary;
-        display: inline-block;
-        font-weight: bold;
-        padding: 0.2rem;
-        transform: skewX(-25deg);
-    }
-    .span-highlight-shadow-bg-primary{
-        @include span-shadow-generator();
-    }
-    
-    .span-highlight-shadow-bg-black{
-        @include span-shadow-generator($primary, $black, $gray)
-
-    }
-    .span-highlight-shadow-bg-secondary{
-        @include span-shadow-generator($black,$secondary,$primary);
-    }
-    .span-highlight-shadow-prueba{
-        @include span-shadow-generator($primary, $black, $white)
-    }
-    
-    
-    
     .data-profile{
         display: flex;
         flex-direction: column;

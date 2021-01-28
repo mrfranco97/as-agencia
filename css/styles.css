@@ -7163,6 +7163,61 @@ a.text-dark:hover, a.text-dark:focus {
 * {
   box-sizing: border-box; }
 
+/*----------Clases Genericas------------*/
+.span-highlight {
+  background-color: #97fae4ff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.2rem;
+  transform: skewX(-25deg); }
+
+.span-highlight-shadow-bg-primary {
+  background-color: #97fae4ff;
+  display: inline-block;
+  font-weight: bold;
+  color: #000807ff;
+  padding: 0.2rem;
+  transform: skewX(-10deg);
+  box-shadow: 5px 2px 0px #000807ff; }
+
+.span-highlight-shadow-bg-black {
+  background-color: #000807ff;
+  display: inline-block;
+  font-weight: bold;
+  color: #97fae4ff;
+  padding: 0.2rem;
+  transform: skewX(-10deg);
+  box-shadow: 5px 2px 0px #858786ff; }
+
+.span-highlight-shadow-bg-secondary {
+  background-color: #fffbffff;
+  display: inline-block;
+  font-weight: bold;
+  color: #000807ff;
+  padding: 0.2rem;
+  transform: skewX(-10deg);
+  box-shadow: 5px 2px 0px #97fae4ff; }
+
+.span-highlight-shadow-prueba {
+  background-color: #000807ff;
+  display: inline-block;
+  font-weight: bold;
+  color: #97fae4ff;
+  padding: 0.2rem;
+  transform: skewX(-10deg);
+  box-shadow: 5px 2px 0px #fff;
+  box-shadow: 5px 2px 0px #858786ff; }
+
+.img-effect:hover .card-img {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: all 2s ease; }
+
+.img-effect:hover .col .card-img {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: all 2s ease; }
+
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
@@ -7222,45 +7277,6 @@ body {
         font-weight: bold;
         padding: 0.2rem;
         transform: skewX(-25deg); }
-  body .span-highlight {
-    background-color: #97fae4ff;
-    display: inline-block;
-    font-weight: bold;
-    padding: 0.2rem;
-    transform: skewX(-25deg); }
-  body .span-highlight-shadow-bg-primary {
-    background-color: #97fae4ff;
-    display: inline-block;
-    font-weight: bold;
-    color: #000807ff;
-    padding: 0.2rem;
-    transform: skewX(-10deg);
-    box-shadow: 5px 2px 0px #000807ff; }
-  body .span-highlight-shadow-bg-black {
-    background-color: #000807ff;
-    display: inline-block;
-    font-weight: bold;
-    color: #97fae4ff;
-    padding: 0.2rem;
-    transform: skewX(-10deg);
-    box-shadow: 5px 2px 0px #858786ff; }
-  body .span-highlight-shadow-bg-secondary {
-    background-color: #fffbffff;
-    display: inline-block;
-    font-weight: bold;
-    color: #000807ff;
-    padding: 0.2rem;
-    transform: skewX(-10deg);
-    box-shadow: 5px 2px 0px #97fae4ff; }
-  body .span-highlight-shadow-prueba {
-    background-color: #000807ff;
-    display: inline-block;
-    font-weight: bold;
-    color: #97fae4ff;
-    padding: 0.2rem;
-    transform: skewX(-10deg);
-    box-shadow: 5px 2px 0px #fff;
-    box-shadow: 5px 2px 0px #858786ff; }
   body .data-profile {
     display: flex;
     flex-direction: column;
