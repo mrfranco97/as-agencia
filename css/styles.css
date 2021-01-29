@@ -7213,10 +7213,15 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.8;
   transition: all 2s ease; }
 
-.img-effect:hover .col .card-img {
-  transform: scale(1.1);
-  opacity: 0.8;
-  transition: all 2s ease; }
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 0; }
+
+.card-text {
+  font-size: 1rem; }
+  .card-text span {
+    color: #97fae4ff; }
 
 body {
   font-family: "Karla", sans-serif;
@@ -7232,7 +7237,7 @@ body {
   /* ----------- As Blgos Styles ------------*/ }
   body header {
     background-color: #fff; }
-  body h1, body h2, body h3, body h4 {
+  body h1, body h2, body h3, body h4, body h5 {
     font-family: "Mulish", sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -7407,17 +7412,4 @@ body {
       text-decoration: none;
       color: #fff; }
       body .article-highlighted .card a .card-img-overlay .card-title {
-        font-size: 2.5rem;
-        margin-bottom: 0; }
-      body .article-highlighted .card a .card-img-overlay .card-text {
-        font-size: 1rem; }
-        body .article-highlighted .card a .card-img-overlay .card-text span {
-          color: #97fae4ff; }
-      body .article-highlighted .card a .card-img-overlay:hover .card-img {
-        transform: scale(1.1);
-        opacity: 0.3;
-        transition: all 1s ease; }
-      body .article-highlighted .card a .card-img-overlay:hover .card-img {
-        transform: scale(1.1);
-        opacity: 0.3;
-        transition: all 2s ease; }
+        font-size: 2.5rem; }

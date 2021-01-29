@@ -75,13 +75,15 @@ $theme-colors: (
         transition: all 2s ease;
     }
 }
-.img-effect:hover{
-    .col{
-        .card-img{
-            transform: scale(1.1);
-            opacity: 0.8;
-            transition: all 2s ease;
-        }
+.card-title{
+    font-size: $font-size-base*1.5;
+    margin-bottom: 0;
+    padding: 0;
+}
+.card-text{
+    font-size: $font-size-base;
+    span{
+        color: $primary;
     }
 }
 
@@ -98,7 +100,7 @@ body{
         background-color: $white;
     }
     
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         font-family: $font-family-title;
         font-weight: bold;
         font-size: $font-size-base*3;
@@ -366,30 +368,10 @@ body{
                             color: $white;
                             .card-title{
                                 font-size: $font-size-base*2.5;
-                                margin-bottom: 0;
-                            }
-                            .card-text{
-                                font-size: $font-size-base;
-                                span{
-                                    color: $primary;
-                                }
-                            }
-                            &:hover{
-                                .card-img{
-                                    transform: scale(1.1);
-                                    opacity: 0.3;
-                                    transition: all 1s ease;
-                                }
-                            }              
-                            &:hover{
-                                .card-img{
-                                    transform: scale(1.1);
-                                    opacity: 0.3;
-                                    transition: all 2s ease;
-                                }
                             }
                     }
                 }
         }
     }
+
 }
