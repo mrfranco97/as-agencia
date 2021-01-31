@@ -81,9 +81,11 @@ $theme-colors: (
     padding: 0;
 }
 .card-text{
-    font-size: $font-size-base;
+        font-family: $font-family-base;
+        font-size: $font-size-base;
     span{
         color: $primary;
+        font-weight: bold;
     }
 }
 
@@ -96,6 +98,7 @@ body{
     position: relative;
     min-height: 100vh;
     padding-bottom: 40px;
+
     header{
         background-color: $white;
     }
@@ -352,13 +355,6 @@ body{
                     width: 100%;
                     background-color: $mint;
                     }
-                    &:hover{
-                        .card-img{
-                            transform: scale(1.1);
-                            opacity: 0.8;
-                            transition: all 2s ease;
-                        }
-                    }
             }
                 a{
                     .card-img-overlay{
@@ -371,6 +367,16 @@ body{
                             }
                     }
                 }
+        }
+    }
+
+    .article-overlay{
+        @extend .article-highlighted;
+        .card-img{
+            height: 100px;
+        }
+        .card-title{
+            font-size: $font-size-base*1.5;
         }
     }
 

@@ -7219,9 +7219,11 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0; }
 
 .card-text {
+  font-family: "Karla", sans-serif;
   font-size: 1rem; }
   .card-text span {
-    color: #97fae4ff; }
+    color: #97fae4ff;
+    font-weight: bold; }
 
 body {
   font-family: "Karla", sans-serif;
@@ -7395,21 +7397,21 @@ body {
       display: block; }
       body #contacto .contact-icons a:hover {
         color: #97fae4ff; }
-  body .article-highlighted .card {
+  body .article-highlighted .card, body .article-overlay .card {
     overflow: hidden;
     background-color: #97fae4ff; }
-    body .article-highlighted .card a .card-img {
+    body .article-highlighted .card a .card-img, body .article-overlay .card a .card-img {
       height: 200px;
       width: 100%;
       background-color: #97fae4ff; }
-    body .article-highlighted .card a:hover .card-img {
-      transform: scale(1.1);
-      opacity: 0.8;
-      transition: all 2s ease; }
-    body .article-highlighted .card a .card-img-overlay {
+    body .article-highlighted .card a .card-img-overlay, body .article-overlay .card a .card-img-overlay {
       top: unset;
       display: block;
       text-decoration: none;
       color: #fff; }
-      body .article-highlighted .card a .card-img-overlay .card-title {
+      body .article-highlighted .card a .card-img-overlay .card-title, body .article-overlay .card a .card-img-overlay .card-title {
         font-size: 2.5rem; }
+  body .article-overlay .card-img {
+    height: 100px; }
+  body .article-overlay .card-title {
+    font-size: 1.5rem; }
