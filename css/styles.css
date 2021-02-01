@@ -7213,17 +7213,30 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.8;
   transition: all 2s ease; }
 
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  padding: 0; }
+.card {
+  overflow: hidden; }
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding: 0; }
+  .card-text {
+    font-family: "Karla", sans-serif;
+    font-size: 1rem; }
+    .card-text span {
+      color: #97fae4ff;
+      font-weight: bold; }
 
-.card-text {
-  font-family: "Karla", sans-serif;
-  font-size: 1rem; }
-  .card-text span {
-    color: #97fae4ff;
-    font-weight: bold; }
+.card-img-vertical {
+  height: 300px;
+  background-color: #97fae4ff; }
+
+.card-img-horizontal {
+  height: 200px;
+  background-color: #97fae4ff; }
+
+.card-img-square {
+  height: 150px;
+  background-color: #97fae4ff; }
 
 body {
   font-family: "Karla", sans-serif;
@@ -7236,7 +7249,16 @@ body {
   /*-------- Services Styles-----------*/
   /*--------Portfolio Styles-------*/
   /* ------- Contact Styles -----------*/
-  /* ----------- As Blgos Styles ------------*/ }
+  /* ----------- As Blgos Styles ------------*/
+  /*.article-overlay{
+        @extend .article-highlighted;
+        .card-img{
+            height: 100px;
+        }
+        .card-title{
+            font-size: $font-size-base*1.5;
+        }
+    }*/ }
   body header {
     background-color: #fff; }
   body h1, body h2, body h3, body h4, body h5 {
@@ -7397,21 +7419,10 @@ body {
       display: block; }
       body #contacto .contact-icons a:hover {
         color: #97fae4ff; }
-  body .article-highlighted .card, body .article-overlay .card {
-    overflow: hidden;
-    background-color: #97fae4ff; }
-    body .article-highlighted .card a .card-img, body .article-overlay .card a .card-img {
-      height: 200px;
-      width: 100%;
-      background-color: #97fae4ff; }
-    body .article-highlighted .card a .card-img-overlay, body .article-overlay .card a .card-img-overlay {
-      top: unset;
-      display: block;
-      text-decoration: none;
-      color: #fff; }
-      body .article-highlighted .card a .card-img-overlay .card-title, body .article-overlay .card a .card-img-overlay .card-title {
-        font-size: 2.5rem; }
-  body .article-overlay .card-img {
-    height: 100px; }
-  body .article-overlay .card-title {
-    font-size: 1.5rem; }
+  body .article-highlighted .card a .card-img-overlay {
+    top: unset;
+    display: block;
+    text-decoration: none;
+    color: #fff; }
+    body .article-highlighted .card a .card-img-overlay .card-title {
+      font-size: 2.5rem; }
