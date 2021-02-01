@@ -41,9 +41,6 @@ $theme-colors: (
     }   
 }
 
-.testing{
-    color:#555;
-}
 
 *{
     box-sizing: border-box;
@@ -149,10 +146,9 @@ body{
         }  
     } 
 
-    #video{
+    #inicio{
         width: 100%;
-        position: relative;
-        z-index: 100;
+        height: 100vh;
     }
 
     
