@@ -7274,7 +7274,8 @@ body {
       color: #97fae4ff; }
   body #inicio {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    margin-bottom: 4rem; }
   body .media {
     font-size: 1.5rem;
     color: #000807ff;
