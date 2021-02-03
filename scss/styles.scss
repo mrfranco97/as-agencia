@@ -8,6 +8,7 @@ $gray: #858786ff;
 $snow: #fffbffff;
 $primary:$mint;
 $secondary:$snow;
+
 $colors: (
     "mint":     $mint,
     "snow":     $snow,
@@ -18,6 +19,11 @@ $theme-colors: (
     "primary":      $primary,
     "secondary":    $snow 
 );
+
+//Carousel
+$carousel-indicator-active-bg:       $primary;
+$carousel-indicator-width:           15px;
+$carousel-indicator-height:          15px;
 
 @import "bootstrap/scss/bootstrap.scss";
 
@@ -153,9 +159,6 @@ body{
     }
     @media(max-width:768px)
     {
-        .nav-wraper{
-            padding:0;
-        }
             #main-nav{
                 width: 100%;
                 height: 100vh;
@@ -170,8 +173,6 @@ body{
             }
     }
 
-    
-    
     .media{
         font-size: $font-size-base*1.5;
         color:$black;
@@ -292,17 +293,22 @@ body{
         margin: auto;
         .carousel-indicators{
             margin:0;
+            li{
+                border-radius: 100%;
+            }
+            li:active{
+                background-color: $primary;
+            }
         }
     }
+    
     .carousel-inner{
         width: 100%;
         padding-bottom: $carousel-indicator-height;
-        background-color: $gray;
             .slides{
                 width:  100%;
                 display: block;
                 margin:auto;
-                background-color: $gray;
                 .img-wraper{
                     display: flex;
                     justify-content: center;
@@ -319,7 +325,7 @@ body{
                         position: relative;
                         margin: 0;
                         p{
-                            font-size: $font-size-base*2;
+                            font-size: $font-size-base*1.3;
                             font-weight: bold;
                         }
                         &::before{
@@ -349,12 +355,15 @@ body{
                 }
         }
     }
+
     .clients{
+
         .img-wraper{
-            height: 50px;
-            width: 80px;
+            height: 100px;
+            width: 200px;
                 img{
                     height: 100%;
+                    width: 100%;
                 }
         }
     }
