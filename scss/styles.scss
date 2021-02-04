@@ -398,6 +398,18 @@ body{
         h1,h2,h3,h4,h5{
             font-size: $font-size-base*2.5;
         }
+        .services-title{
+            font-size: $font-size-base*2.2;
+            padding: 1rem 0;
+            margin-bottom: 4rem;
+
+        }
+        
+        .services-wraper{
+            h2{
+                font-size: $font-size-base*1.5;
+            }  
+        } 
             #main-nav{
                 width: 100%;
                 color:$black;
@@ -424,6 +436,6 @@ body{
             }
             .aside-media{
                 display: none;
-            }
+            }   
     }
 }
