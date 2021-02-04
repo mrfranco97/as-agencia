@@ -75,6 +75,12 @@ $carousel-indicator-height:          15px;
 .span-highlight-shadow-prueba{
     @include span-shadow-generator($primary, $black, $white)
 }
+.navbar-brand
+{
+    &:hover{
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    }
+}
 .media-link
 {
     font-size: $font-size-base*1.5;
@@ -167,35 +173,9 @@ body{
         width: 100%;
         height: 100vh;
         margin-bottom: 4rem;
+        position: relative;
+        z-index: 50;
     }
-    @media(max-width:768px)
-    {
-            #main-nav{
-                width: 100%;
-                color:$black;
-                .navbar-nav{
-                    height: 100vh;
-                    align-items: center;
-                    justify-content: center;
-                    padding-bottom: 10rem;
-                    .nav-item{
-                        margin:0.3rem 0;
-                    }
-                }
-                .nav-link{
-                    font-weight: bold;
-                    font-size: $font-size-base*2;
-                    margin-bottom: 0.5rem;
-                    font-family: $font-family-base;
-                }
-                .media-link{
-                    padding:0 0.8rem;
-                    font-size:$font-size-base*2;
-                    margin-top: 5rem;
-                }
-            }
-    }
-
     .aside-media{
         color:$black;
         font-style: none;
@@ -365,7 +345,6 @@ body{
     }
 
     .clients{
-
         .img-wraper{
             height: 100px;
             width: 200px;
@@ -413,14 +392,38 @@ body{
                 }
         }
     }
-
-    /*.article-overlay{
-        @extend .article-highlighted;
-        .card-img{
-            height: 100px;
+    //Media Querys
+    @media(max-width:768px)
+    {
+        h1,h2,h3,h4,h5{
+            font-size: $font-size-base*2.5;
         }
-        .card-title{
-            font-size: $font-size-base*1.5;
-        }
-    }*/
+            #main-nav{
+                width: 100%;
+                color:$black;
+                .navbar-nav{
+                    height: 100vh;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 10rem;
+                    .nav-item{
+                        margin:0.3rem 0;
+                    }
+                }
+                .nav-link{
+                    font-weight: bold;
+                    font-size: $font-size-base*2;
+                    margin-bottom: 0.5rem;
+                    font-family: $font-family-base;
+                }
+                .media-link{
+                    padding:0 0.8rem;
+                    font-size:$font-size-base*2;
+                    margin-top: 5rem;
+                }
+            }
+            .aside-media{
+                display: none;
+            }
+    }
 }
