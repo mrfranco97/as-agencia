@@ -1390,6 +1390,7 @@ pre {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1743,6 +1744,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
+  font-family: "Karla", sans-serif;
   font-weight: 400;
   color: #212529;
   text-align: center;
@@ -2761,6 +2763,7 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2837,6 +2840,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
+  font-family: "Karla", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;

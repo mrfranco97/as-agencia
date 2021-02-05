@@ -17,8 +17,11 @@ $colors: (
 );
 $theme-colors: (
     "primary":      $primary,
-    "secondary":    $snow 
+    "secondary":    $snow
 );
+
+//Form modification Boostrap
+$input-btn-font-family:$font-family-base;
 
 //Carousel
 $carousel-indicator-active-bg:       $primary;
