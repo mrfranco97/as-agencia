@@ -7382,31 +7382,31 @@ body {
           width: 100%;
           position: relative;
           margin: 0; }
-          body .carousel-inner .slides .data-wraper blockquote p {
-            font-size: 1.3rem;
-            font-weight: bold; }
           body .carousel-inner .slides .data-wraper blockquote::before {
             position: absolute;
-            font-size: 14rem;
+            font-size: 10rem;
             content: '“';
             left: 0;
             top: 0;
             opacity: 0.1; }
           body .carousel-inner .slides .data-wraper blockquote::after {
             position: absolute;
-            font-size: 14rem;
+            font-size: 10rem;
             content: '”';
             right: 0;
             bottom: 0;
             opacity: 0.1; }
+          body .carousel-inner .slides .data-wraper blockquote p {
+            font-size: 1.3rem;
+            font-weight: bold; }
           body .carousel-inner .slides .data-wraper blockquote cite {
             font-size: 1rem;
             display: block; }
           body .carousel-inner .slides .data-wraper blockquote .position {
             opacity: 0.5; }
   body .clients .img-wraper {
-    height: 100px;
-    width: 200px; }
+    height: 100%;
+    width: 100%; }
     body .clients .img-wraper img {
       height: 100%;
       width: 100%; }
@@ -7459,4 +7459,6 @@ body {
         font-size: 2rem;
         margin-top: 5rem; }
     body .aside-media {
-      display: none; } }
+      display: none; }
+    body #carousel-indicadores {
+      width: 100%; } }
