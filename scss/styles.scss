@@ -96,7 +96,7 @@ $carousel-indicator-height:          15px;
     }
 }
 .img-effect:hover{
-    .card-img{
+    img{
         transform: scale(1.1);
         opacity: 0.8;
         transition: all 2s ease;
@@ -361,9 +361,11 @@ body{
         .img-wraper{
             height: 100%;
             width: 100%;
+            padding: 1rem;
                 img{
                     height: 100%;
                     width: 100%;
+                    object-fit: contain;
                 }
         }
     }

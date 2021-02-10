@@ -7223,7 +7223,7 @@ a.text-dark:hover, a.text-dark:focus {
   .media-link:hover {
     color: #97fae4ff; }
 
-.img-effect:hover .card-img {
+.img-effect:hover img {
   transform: scale(1.1);
   opacity: 0.8;
   transition: all 2s ease; }
@@ -7414,10 +7414,12 @@ body {
             opacity: 0.5; }
   body .clients .img-wraper {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    padding: 1rem; }
     body .clients .img-wraper img {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      object-fit: contain; }
   body #contacto {
     display: flex;
     flex-direction: column;
