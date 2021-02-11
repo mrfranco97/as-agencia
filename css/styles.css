@@ -7233,7 +7233,8 @@ a.text-dark:hover, a.text-dark:focus {
   .card-title {
     font-size: 1.5rem;
     margin-bottom: 0;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0.5rem; }
   .card-text {
     font-family: "Karla", sans-serif;
     font-size: 1rem; }
@@ -7439,6 +7440,7 @@ body {
     text-decoration: none;
     color: #fff; }
     body .article-highlighted .card a .card-img-overlay .card-title {
+      margin-bottom: 0;
       font-size: 2.5rem; }
   @media (max-width: 768px) {
     body h1, body h2, body h3, body h4, body h5 {
@@ -7471,4 +7473,19 @@ body {
     body .aside-media {
       display: none; }
     body #carousel-indicadores {
-      width: 100%; } }
+      width: 100%; }
+    body .article-highlighted .card a .card-img {
+      height: 200px; }
+    body .article-highlighted .card a .card-img-overlay .card-title {
+      font-size: 1.4rem; }
+    body .card-title {
+      font-size: 1.3rem; }
+    body .card-text {
+      font-family: "Karla", sans-serif;
+      font-size: 0.8rem; }
+      body .card-text span {
+        color: #97fae4ff;
+        font-weight: bold; }
+    body .card-img-vertical {
+      height: 250px;
+      background-color: #97fae4ff; } }

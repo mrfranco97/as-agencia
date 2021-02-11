@@ -108,6 +108,7 @@ $carousel-indicator-height:          15px;
         font-size: $font-size-base*1.5;
         margin-bottom: 0;
         padding: 0;
+        margin-bottom: 0.5rem;
     }
     &-text{
             font-family: $font-family-base;
@@ -401,6 +402,7 @@ body{
                             text-decoration: none;
                             color: $white;
                             .card-title{
+                                margin-bottom: 0;
                                 font-size: $font-size-base*2.5;
                             }
                     }
@@ -455,5 +457,36 @@ body{
             #carousel-indicadores{
                 width: 100%;
             }
-    }
+            .article-highlighted{
+                .card{
+                        a{
+                            .card-img{
+                                height: 200px;
+                            }
+                        }
+                        a{
+                            .card-img-overlay{
+                                    .card-title{
+                                        font-size: $font-size-base*1.4;
+                                    }
+                            }
+                        }
+                }
+            }
+            .card-title{
+                font-size: $font-size-base*1.3;
+            }
+            .card-text{
+                font-family: $font-family-base;
+                font-size: $font-size-base*.8;
+                span{
+                    color: $primary;
+                    font-weight: bold;
+            }
+            }
+            .card-img-vertical{
+                height: 250px;
+                background-color: $mint;
+            }
+        }
 }
