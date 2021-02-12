@@ -104,6 +104,10 @@ $carousel-indicator-height:          15px;
 }
 .card{
     overflow: hidden;
+    a{
+        color: $black;
+        text-decoration: none;
+    }
     &-title{
         font-size: $font-size-base*1.5;
         margin-bottom: 0;
@@ -487,6 +491,16 @@ body{
             .card-img-vertical{
                 height: 250px;
                 background-color: $mint;
+            }
+            .card-square{
+                .card-body{
+                    padding: 0.8rem;
+                    height: 100px;
+                }
+                .card-title{
+                    font-size: $font-size-base;
+                    flex-grow: 1;
+                }
             }
         }
 }

@@ -7230,6 +7230,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .card {
   overflow: hidden; }
+  .card a {
+    color: #000807ff;
+    text-decoration: none; }
   .card-title {
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -7488,4 +7491,10 @@ body {
         font-weight: bold; }
     body .card-img-vertical {
       height: 250px;
-      background-color: #97fae4ff; } }
+      background-color: #97fae4ff; }
+    body .card-square .card-body {
+      padding: 0.8rem;
+      height: 100px; }
+    body .card-square .card-title {
+      font-size: 1rem;
+      flex-grow: 1; } }
