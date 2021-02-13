@@ -7493,8 +7493,7 @@ body {
       height: 250px;
       background-color: #97fae4ff; }
     body .card-square .card-body {
-      padding: 0.8rem;
-      height: 100px; }
+      padding: 0.8rem; }
     body .card-square .card-title {
       font-size: 1rem;
       flex-grow: 1; } }
