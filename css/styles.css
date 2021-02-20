@@ -7202,15 +7202,14 @@ a.text-dark:hover, a.text-dark:focus {
   transform: skewX(-10deg);
   box-shadow: 5px 2px 0px #97fae4ff; }
 
-.span-highlight-shadow-prueba {
+.span-highlight-shadow-bg-black-white {
   background-color: #000807ff;
   display: inline-block;
   font-weight: bold;
-  color: #97fae4ff;
+  color: #fffbffff;
   padding: 0.2rem;
   transform: skewX(-10deg);
-  box-shadow: 5px 2px 0px #fff;
-  box-shadow: 5px 2px 0px #858786ff; }
+  box-shadow: 5px 2px 0px #97fae4ff; }
 
 .navbar-brand:hover {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); }
@@ -7265,6 +7264,11 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 40px;
+  /*#ytplayer{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }*/
   /*-------- Services Styles-----------*/
   /*--------Portfolio Styles-------*/
   /* ------- Contact Styles -----------*/
@@ -7283,18 +7287,12 @@ body {
     body .navbar-light .navbar-nav .nav-link:hover {
       color: #97fae4ff; }
   body #inicio {
-    width: 100%;
-    height: 100vh;
     margin-bottom: 4rem;
     position: relative;
     z-index: 50; }
   body #video {
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  body #ytplayer {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover; }
   body .aside-media {
     color: #000807ff;
@@ -7309,16 +7307,14 @@ body {
   body #hola {
     font-size: 1.2rem;
     font-weight: bold; }
-  body .m-v-data {
-    margin: 1rem 0rem; }
-    body .m-v-data h3 {
-      font-size: 1.5rem; }
-      body .m-v-data h3 .span-highlight {
-        background-color: #97fae4ff;
-        display: inline-block;
-        font-weight: bold;
-        padding: 0.2rem;
-        transform: skewX(-25deg); }
+  body .m-v-data h3 {
+    font-size: 1.5rem; }
+    body .m-v-data h3 .span-highlight {
+      background-color: #97fae4ff;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.2rem;
+      transform: skewX(-25deg); }
   body .data-profile {
     display: flex;
     flex-direction: column;
@@ -7332,7 +7328,8 @@ body {
       box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); }
     body .data-profile img {
       border-radius: 100%;
-      margin-bottom: 1rem; }
+      margin: 0.8rem 0;
+      border: #97fae4ff solid 1px; }
     body .data-profile h4 {
       background-color: #97fae4ff;
       font-weight: bold;
@@ -7380,6 +7377,7 @@ body {
     body .carousel-inner .slides {
       width: 100%;
       display: block;
+      height: 400px;
       margin: auto; }
       body .carousel-inner .slides .img-wraper {
         display: flex;
@@ -7387,6 +7385,7 @@ body {
         margin-bottom: 2rem;
         padding: 1rem 0; }
         body .carousel-inner .slides .img-wraper img {
+          border: #97fae4ff solid 1px;
           border-radius: 100%; }
       body .carousel-inner .slides .data-wraper {
         margin-bottom: 2rem; }
@@ -7424,18 +7423,21 @@ body {
       height: 100%;
       width: 100%;
       object-fit: contain; }
-  body #contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto; }
-    body #contacto .contact-icons a {
+  body .contact-data-wraper {
+    background-color: rgba(151, 250, 228, 0.6);
+    border-radius: 5%;
+    margin-top: 4.5rem; }
+    body .contact-data-wraper p {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+      font-weight: 600;
+      line-height: 1.8rem; }
+    body .contact-data-wraper .contact-icons a {
       font-size: 2rem;
       color: #000807ff;
       padding: 5px;
       display: block; }
-      body #contacto .contact-icons a:hover {
+      body .contact-data-wraper .contact-icons a:hover {
         color: #97fae4ff; }
   body .article-highlighted .card a .card-img-overlay {
     top: unset;
@@ -7445,7 +7447,12 @@ body {
     body .article-highlighted .card a .card-img-overlay .card-title {
       margin-bottom: 0;
       font-size: 2.5rem; }
-  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 0px; }
+    body footer {
+      position: relative; }
     body h1, body h2, body h3, body h4, body h5 {
       font-size: 2.5rem; }
     body .services-title {
@@ -7456,7 +7463,8 @@ body {
       font-size: 1.5rem; }
     body #main-nav {
       width: 100%;
-      color: #000807ff; }
+      color: #000807ff;
+      position: relative; }
       body #main-nav .navbar-nav {
         height: 100vh;
         align-items: center;

@@ -75,8 +75,8 @@ $carousel-indicator-height:          15px;
 .span-highlight-shadow-bg-secondary{
     @include span-shadow-generator($black,$secondary,$primary);
 }
-.span-highlight-shadow-prueba{
-    @include span-shadow-generator($primary, $black, $white)
+.span-highlight-shadow-bg-black-white{
+    @include span-shadow-generator($snow, $black, $primary)
 }
 .navbar-brand
 {
@@ -178,22 +178,20 @@ body{
     } 
 
     #inicio{
-        width: 100%;
-        height: 100vh;
         margin-bottom: 4rem;
         position: relative;
         z-index: 50;
     }
     #video{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
     }
-    #ytplayer{
+    /*#ytplayer{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
-    }
+    }*/
     .aside-media{
         color:$black;
         font-style: none;
@@ -212,7 +210,6 @@ body{
     }
     
     .m-v-data{
-        margin: 1rem 0rem;
         h3{
             font-size: $font-size-base*1.5;
             .span-highlight{
@@ -238,7 +235,8 @@ body{
         }
         img{
             border-radius: 100%;
-            margin-bottom: 1rem;
+            margin: 0.8rem 0;
+            border: $mint solid 1px;
         }
         h4{
             background-color: $primary;
@@ -314,6 +312,7 @@ body{
             .slides{
                 width:  100%;
                 display: block;
+                height: 400px;
                 margin:auto;
                 .img-wraper{
                     display: flex;
@@ -321,6 +320,7 @@ body{
                     margin-bottom: 2rem;
                     padding: 1rem 0;
                         img{
+                            border: $mint solid 1px;
                             border-radius: 100%;
                         }
                 }
@@ -367,7 +367,7 @@ body{
             height: 200px;
             width: 100%;
             padding: 1rem;
-                img{
+            img{
                     height: 100%;
                     width: 100%;
                     object-fit: contain;
@@ -375,13 +375,17 @@ body{
         }
     }
     /* ------- Contact Styles -----------*/
-    
-    #contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+
+    .contact-data-wraper{
+        background-color: rgba(151, 250, 228, 0.6);
+        border-radius: 5%;
+        margin-top: 4.5rem;
+        p{
+            font-size: $font-size-base*1.2;
+            padding:0 1rem;
+            font-weight: 600;
+            line-height: 1.8rem;
+        }
         .contact-icons{
             a{
                 font-size: $font-size-base*2;
@@ -413,27 +417,34 @@ body{
                 }
         }
     }
+}
     //Media Querys
     @media(max-width:768px)
     {
-        h1,h2,h3,h4,h5{
-            font-size: $font-size-base*2.5;
-        }
-        .services-title{
-            font-size: $font-size-base*2.2;
-            padding: 1rem 0;
-            margin-bottom: 4rem;
-
-        }
-        
-        .services-wraper{
-            h2{
-                font-size: $font-size-base*1.5;
-            }  
-        } 
+        body{
+            padding-bottom: 0px;
+            footer{
+                position: relative;
+            }
+            h1,h2,h3,h4,h5{
+                font-size: $font-size-base*2.5;
+            }
+            .services-title{
+                font-size: $font-size-base*2.2;
+                padding: 1rem 0;
+                margin-bottom: 4rem;
+                
+            }
+            
+            .services-wraper{
+                h2{
+                    font-size: $font-size-base*1.5;
+                }  
+            } 
             #main-nav{
                 width: 100%;
                 color:$black;
+                position: relative;
                 .navbar-nav{
                     height: 100vh;
                     align-items: center;
@@ -463,18 +474,18 @@ body{
             }
             .article-highlighted{
                 .card{
-                        a{
-                            .card-img{
-                                height: 200px;
+                    a{
+                        .card-img{
+                            height: 200px;
+                        }
+                    }
+                    a{
+                        .card-img-overlay{
+                            .card-title{
+                                font-size: $font-size-base*1.4;
                             }
                         }
-                        a{
-                            .card-img-overlay{
-                                    .card-title{
-                                        font-size: $font-size-base*1.4;
-                                    }
-                            }
-                        }
+                    }
                 }
             }
             .card-title{
@@ -486,7 +497,7 @@ body{
                 span{
                     color: $primary;
                     font-weight: bold;
-            }
+                }
             }
             .card-img-vertical{
                 height: 250px;
@@ -502,4 +513,4 @@ body{
                 }
             }
         }
-}
+    }
