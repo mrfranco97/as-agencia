@@ -3303,6 +3303,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: 350px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -7245,15 +7246,13 @@ a.text-dark:hover, a.text-dark:focus {
       font-weight: bold; }
 
 .card-img-vertical {
-  height: 300px;
-  background-color: #97fae4ff; }
-
-.card-img-horizontal {
-  height: 200px;
+  height: 350px;
+  object-fit: cover;
   background-color: #97fae4ff; }
 
 .card-img-square {
-  height: 150px;
+  height: 170px;
+  object-fit: cover;
   background-color: #97fae4ff; }
 
 body {
@@ -7436,6 +7435,9 @@ body {
       display: block; }
       body .contact-data-wraper .contact-icons a:hover {
         color: #97fae4ff; }
+  body .article-highlighted .card a .card-img {
+    height: 350px;
+    object-fit: cotain; }
   body .article-highlighted .card a .card-img-overlay {
     top: unset;
     display: block;
@@ -7482,8 +7484,6 @@ body {
       display: none; }
     body #carousel-indicadores {
       width: 100%; }
-    body .article-highlighted .card a .card-img {
-      height: 200px; }
     body .article-highlighted .card a .card-img-overlay .card-title {
       font-size: 1.4rem; }
     body .card-title {
@@ -7494,11 +7494,8 @@ body {
       body .card-text span {
         color: #97fae4ff;
         font-weight: bold; }
-    body .card-img-vertical {
-      height: 250px;
-      background-color: #97fae4ff; }
     body .card-square .card-body {
       padding: 0.8rem; }
     body .card-square .card-title {
-      font-size: 1rem;
+      font-size: 1.1rem;
       flex-grow: 1; } }

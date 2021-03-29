@@ -8,6 +8,7 @@ $gray: #858786ff;
 $snow: #fffbffff;
 $primary:$mint;
 $secondary:$snow;
+$card-height:350px;
 
 $colors: (
     "mint":     $mint,
@@ -124,20 +125,16 @@ $carousel-indicator-height:          15px;
     }
 }
 .card-img-vertical{
-        height: 300px;
-        background-color: $mint;
-}
-
-.card-img-horizontal{
-        height: 200px;
+        height: $card-height;
+        object-fit: cover;
         background-color: $mint;
 }
 
 .card-img-square{
-        height: 150px;
+        height: 170px;
+        object-fit: cover;
         background-color: $mint;
 }
-
 
 body{
     font-family: $font-family-base;
@@ -398,10 +395,13 @@ body{
         }
     }
     /* ----------- As Blgos Styles ------------*/
-    
     .article-highlighted{
         .card{
                 a{
+                    .card-img{
+                        height: $card-height;
+                        object-fit: cotain;
+                    }
                     .card-img-overlay{
                         top:unset;
                             display: block;
@@ -473,11 +473,6 @@ body{
             .article-highlighted{
                 .card{
                     a{
-                        .card-img{
-                            height: 200px;
-                        }
-                    }
-                    a{
                         .card-img-overlay{
                             .card-title{
                                 font-size: $font-size-base*1.4;
@@ -497,16 +492,13 @@ body{
                     font-weight: bold;
                 }
             }
-            .card-img-vertical{
-                height: 250px;
-                background-color: $mint;
-            }
+
             .card-square{
                 .card-body{
                     padding: 0.8rem;
                 }
                 .card-title{
-                    font-size: $font-size-base;
+                    font-size: $font-size-base*1.1;
                     flex-grow: 1;
                 }
             }
